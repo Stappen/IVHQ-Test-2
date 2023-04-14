@@ -1,0 +1,144 @@
+@import 'variables';
+
+// Padding set for the description section
+$d-padding-v: 20px;
+$d-padding-h: 40px;
+
+#landing-image {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    @include respond-to-min(large) {
+        height: 350px;
+    }
+}
+
+#page-content {
+    display: flex;
+    justify-content: center;
+}
+
+#description-container {
+    display: flex;
+    flex-direction: row;
+    padding: $d-padding-v $d-padding-h;
+
+    @include respond-to-min(large) {
+        min-width: 944px;
+        width: 75%;
+    }
+
+    @include respond-to-max(large) {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+.hr-green {
+    color: $green;
+    width: 80px;
+    margin-bottom: 10px;
+
+    &.left {
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+
+#description {
+    flex: 2;
+    margin-bottom: 20px;
+
+    @include respond-to-min(large) {
+        padding-right: 80px;
+    }
+
+    @include respond-to-max(large) {
+        padding: $d-padding-v $d-padding-h;
+    }
+}
+
+#description-header {
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 10px;
+
+    :nth-child(1), :nth-child(2) {
+        display: inline;
+    }
+}
+
+#buy-now {
+    flex: 1;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: $light-blue;
+
+    @include respond-to-max(large) {
+        padding: $d-padding-v $d-padding-h;
+        border-radius: 0;
+    }
+}
+
+#add-to-trip {
+    color: $dark-blue;
+}
+
+#ticks {
+    margin-bottom: 20px;
+}
+
+.tick-group {
+    display: grid;
+    grid-template-columns: 18px auto;
+    column-gap: 5px;
+    margin-bottom: 10px;
+
+    .tick {
+        width: 18px;
+        justify-self: center;
+    }
+
+    p {
+        margin: 0;
+        justify-self: start;
+        align-self: start;
+    }
+}
+
+#price-of-trip {
+    margin: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+#added-to-cart {
+    display: flex;
+    width: fit-content;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0 4px;
+    align-items: center;
+    background-color: white;
+    border: 2px solid $green;
+    border-radius: 30px;
+
+    p {
+        display: inline;
+        margin: 0 15px;
+        color: $green;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+}
+
+.tick-circle {
+    width: 30px;
+    height: 30px;
+}

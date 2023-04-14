@@ -1,0 +1,32 @@
+// Colors
+$green: #00A654;
+$dark-green: #006E00;
+$light-blue: #F2F9FA;
+$dark-blue: #22474F;
+$orange: #FFA000;
+$light-gray: #909090;
+$default-font: #3A3A3A;
+
+// Sizes
+$breakpoints: (
+    small: 480px,
+    medium: 768px,
+    large: 1024px,
+    xlarge: 1200px
+);
+
+@mixin respond-to-min($size) {
+    $width: map-get($breakpoints, $size);
+
+    @media (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin respond-to-max($size) {
+    $width: map-get($breakpoints, $size);
+
+    @media (max-width: $width) {
+        @content;
+    }
+}

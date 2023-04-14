@@ -1,0 +1,81 @@
+@import 'variables';
+
+#nav-container {
+    display: flex;
+    justify-content: center;
+    background-color: $green;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 20px 40px;
+
+    @include respond-to-min(large) {
+        min-width: 944px;
+        width: 75%;
+    }
+}
+
+#logo {
+    height: 46px;
+}
+
+#nav-links {
+    @include respond-to-max(medium) {
+        display: none;
+    }
+}
+
+#mobile-buttons {
+    display: none;
+
+    @include respond-to-max(medium) {
+        display: block;
+    }
+}
+
+.nav-button {
+    background-color: $dark-green;
+    color: white;
+    border-style: hidden;
+}
+
+#shopping {
+    position: relative;
+
+    #shopping-bubble {
+        position: absolute;
+        right: 8px;
+        display: block;
+        width: 12px;
+        height: 12px;
+        background-color: $orange;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
+}
+
+// SVG styles
+.chevron-down {
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+}
+
+.shopping-trolley {
+    width: 16px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.hamburger-menu {
+    width: 14px;
+    height: 14px;
+}
