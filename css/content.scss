@@ -67,6 +67,7 @@ $d-padding-h: 40px;
 .section {
     margin-bottom: 10px;
 
+    // Sections begin with a description as well as the first paragraph for that description, so put them on the same line
     :nth-child(1), :nth-child(2) {
         display: inline;
     }
@@ -118,7 +119,7 @@ $d-padding-h: 40px;
     text-align: center;
 }
 
-#added-to-cart {
+#add-to-cart {
     display: flex;
     width: fit-content;
     height: 40px;
@@ -128,6 +129,7 @@ $d-padding-h: 40px;
     background-color: white;
     border: 2px solid $green;
     border-radius: 30px;
+    pointer-events: none;
 
     p {
         display: inline;

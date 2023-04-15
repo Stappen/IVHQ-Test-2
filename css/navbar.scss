@@ -23,11 +23,29 @@
 
 #logo {
     height: 46px;
+    cursor: pointer;
 }
 
 #nav-links {
     @include respond-to-max(medium) {
         display: none;
+    }
+
+    .chevron-down {
+        width: 8px;
+        height: 8px;
+        margin-left: 5px;
+    }
+    
+    .shopping-trolley {
+        width: 16px;
+        margin-right: 6px;
+        vertical-align: middle;
+    }
+    
+    .hamburger-menu {
+        width: 14px;
+        height: 14px;
     }
 }
 
@@ -39,10 +57,23 @@
     }
 }
 
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: 2px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
 .nav-button {
     background-color: $dark-green;
     color: white;
     border-style: hidden;
+
+    &:hover {
+        background-color: darken($dark-green, 4%);
+    }
 }
 
 #shopping {
@@ -60,22 +91,4 @@
         font-size: 0.8rem;
         line-height: 0.8rem;
     }
-}
-
-// SVG styles
-.chevron-down {
-    width: 8px;
-    height: 8px;
-    margin-left: 5px;
-}
-
-.shopping-trolley {
-    width: 16px;
-    margin-right: 6px;
-    vertical-align: middle;
-}
-
-.hamburger-menu {
-    width: 14px;
-    height: 14px;
 }
