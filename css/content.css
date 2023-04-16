@@ -1,0 +1,140 @@
+#landing-image {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@media (min-width: 1024px) {
+  #landing-image {
+    height: 350px;
+  }
+}
+
+#page-content {
+  display: flex;
+  justify-content: center;
+}
+
+#description-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 40px;
+}
+@media (min-width: 1024px) {
+  #description-container {
+    min-width: 944px;
+    width: 75%;
+  }
+}
+@media (max-width: 1024px) {
+  #description-container {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.hr-green {
+  color: #00A654;
+  width: 80px;
+  margin-bottom: 10px;
+}
+.hr-green.left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+#description {
+  flex: 2;
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  #description {
+    padding-right: 80px;
+  }
+}
+@media (max-width: 1024px) {
+  #description {
+    padding: 20px 40px;
+  }
+}
+
+#description-header {
+  margin-bottom: 10px;
+}
+
+.section {
+  margin-bottom: 10px;
+}
+.section :nth-child(1), .section :nth-child(2) {
+  display: inline;
+}
+
+#buy-now {
+  flex: 1;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #F2F9FA;
+}
+@media (max-width: 1024px) {
+  #buy-now {
+    padding: 20px 40px;
+    border-radius: 0;
+  }
+}
+
+#add-to-trip {
+  color: #22474F;
+}
+
+#ticks {
+  margin-bottom: 20px;
+}
+
+.tick-group {
+  display: grid;
+  grid-template-columns: 18px auto;
+  column-gap: 5px;
+  margin-bottom: 10px;
+}
+.tick-group .tick {
+  width: 18px;
+  justify-self: center;
+}
+.tick-group p {
+  margin: 0;
+  justify-self: start;
+  align-self: start;
+}
+
+#price-of-trip {
+  margin: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#add-to-cart {
+  display: flex;
+  width: fit-content;
+  height: 40px;
+  margin: 0 auto;
+  padding: 0 4px;
+  align-items: center;
+  background-color: white;
+  border: 2px solid #00A654;
+  border-radius: 30px;
+  pointer-events: none;
+}
+#add-to-cart p {
+  display: inline;
+  margin: 0 15px;
+  color: #00A654;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.tick-circle {
+  width: 30px;
+  height: 30px;
+}

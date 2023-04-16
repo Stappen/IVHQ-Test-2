@@ -1,0 +1,89 @@
+#nav-container {
+  display: flex;
+  justify-content: center;
+  background-color: #00A654;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 20px 40px;
+}
+@media (min-width: 1024px) {
+  #navbar {
+    min-width: 944px;
+    width: 75%;
+  }
+}
+
+#logo {
+  height: 46px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #nav-links {
+    display: none;
+  }
+}
+#nav-links .chevron-down {
+  width: 8px;
+  height: 8px;
+  margin-left: 5px;
+}
+#nav-links .shopping-trolley {
+  width: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+#nav-links .hamburger-menu {
+  width: 14px;
+  height: 14px;
+}
+
+#mobile-buttons {
+  display: none;
+}
+@media (max-width: 768px) {
+  #mobile-buttons {
+    display: block;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 2px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.nav-button {
+  background-color: #006E00;
+  color: white;
+  border-style: hidden;
+}
+.nav-button:hover {
+  background-color: #005a00;
+}
+
+#shopping {
+  position: relative;
+}
+#shopping #shopping-bubble {
+  position: absolute;
+  right: 8px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #FFA000;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
